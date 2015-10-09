@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title>Enable or Disable selection on text</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.selection.js"></script>
+</head>
+
+<body>
+
+    <p id="MyText">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, quos, corporis, fugiat facilis provident laboriosam eius quas fuga quam nisi labore itaque blanditiis aliquid repudiandae necessitatibus delectus id quo est.
+    </p>
+
+    <p>
+        <button id="BtnTest">Disable text selection</button>
+    </p>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('button#BtnTest').click(function() {
+                var btn = $(this);
+                var p = $('p#MyText');
+                
+                if (btn.text() == "Disable text selection") {
+                    p.disableSelection();
+                    btn.text("Enable text selection");
+                } else {
+                    p.enableSelection();
+                    btn.text("Disable text selection");
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
