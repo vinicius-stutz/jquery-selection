@@ -1,4 +1,4 @@
-# jquery.selection.js
+# jQuery Selection Plugin
 Another jQuery plugin. A simple, light and fast way to enable or disable the selection of elements in a web page.
 
 [![Stack Share](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](http://stackshare.io/vinicius-stutz/vin-cius-stutz)
